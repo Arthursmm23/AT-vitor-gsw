@@ -1,0 +1,84 @@
+/* src/scheduleCarousel.css */
+
+.carousel-container {
+  position: relative;
+}
+
+.custom-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  z-index: 2; /* Para garantir que as setas estejam acima do carrossel */
+}
+
+.next {
+  right: 15px; /* Distância da borda direita */
+}
+
+.prev {
+  left: 15px; /* Distância da borda esquerda */
+  top: -40px;
+}
+
+/* Adicione outros estilos conforme necessário */
+
+.game-card {
+  background-color: #1d428a;
+  color: #f1c40f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Margem para espaçamento entre cards */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-logo {
+  border: 1px solid #f1c40f;
+  width: 100px; /* Tamanho padrão da imagem */
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos responsivos */
+@media (min-width: 600px) {
+  .team-logo {
+    width: 120px; /* Aumentar o tamanho da imagem em telas maiores */
+  }
+
+  .carousel-container {
+    width: 80%; /* Usar 80% para telas maiores */
+  }
+}
+
+@media (min-width: 900px) {
+  .team-logo {
+    width: 140px; /* Aumentar ainda mais o tamanho da imagem em telas muito grandes */
+  }
+
+  .carousel-container {
+    width: 70%; /* Usar 70% para telas grandes */
+  }
+
+  .game-card {
+    padding: 30px; /* Aumentar o padding em telas grandes */
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-container {
+    width: 60%; /* Usar 60% para telas extra grandes */
+  }
+}

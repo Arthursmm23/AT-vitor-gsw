@@ -1,0 +1,36 @@
+/* src/playerCard.css */
+.player-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s;
+  width: 200px;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+}
+
+.player-image {
+  width: 100%;
+  height: auto;
+}
+
+.player-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d428a;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.player-position,
+.player-number {
+  text-align: center;
+  margin: 5px 0;
+  color: #333;
+}
+
+

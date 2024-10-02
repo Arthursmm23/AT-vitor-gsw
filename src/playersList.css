@@ -1,0 +1,23 @@
+/* src/playersList.css */
+
+.players-list {
+  display: grid; /* Mudança de Flexbox para Grid */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(220px, 1fr)
+  ); /* Colunas responsivas */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+}
+
+/* Se você deseja definir um número fixo de colunas em telas grandes */
+@media screen and (min-width: 768px) {
+  .players-list {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(220px, 1fr)
+    ); /* Gera colunas flexíveis */
+    gap: 20px; /* Adiciona espaço entre os cards */
+  }
+}
